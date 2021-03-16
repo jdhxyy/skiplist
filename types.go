@@ -165,8 +165,8 @@ func compareTypes(lhs, rhs reflect.Value, kind reflect.Kind) int {
 		return 0
 
 	case reflect.Uint64:
-		v1 := uint64(lhs.Int())
-		v2 := uint64(rhs.Int())
+		v1 := uint64(lhs.Uint())
+		v2 := uint64(rhs.Uint())
 
 		if v1 > v2 {
 			return 1
